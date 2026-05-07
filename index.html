@@ -7,101 +7,165 @@
   <meta name="description" content="美白・シミケア・毛穴・エイジングケアに効果的な美容液おすすめ5選を徹底比較。肌美精・メラノCC・The Ordinary・CELIMAXなど人気商品をランキング形式で紹介します。">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@600&display=swap" rel="stylesheet">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3194469533822630"
-        crossorigin="anonymous"></script>
+  <!-- AdSense（必要ならそのまま有効化） -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3194469533822630" crossorigin="anonymous"></script>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --accent: #c0648a;
+      --accent-dark: #8d3f62;
       --accent-light: #fdf0f5;
+      --accent-mid: #f0b7cf;
       --text: #1a1a1a;
-      --muted: #777;
-      --border: #e8e0e4;
+      --muted: #666;
+      --border: #e6dbe1;
       --bg: #fdf8f9;
       --white: #fff;
+      --warn-bg: #fff8e1;
+      --warn-border: #f0b429;
     }
-    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; font-size: 16px; }
+    body { font-family: 'Noto Sans JP', sans-serif; background: var(--bg); color: var(--text); line-height: 1.85; font-size: 16px; }
 
-    header { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 1rem; }
-    .header-inner { max-width: 820px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    /* HEADER */
+    header { background: var(--white); border-bottom: 2px solid var(--accent); padding: 0 1rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+    .header-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .site-name { font-size: 1.1rem; font-weight: 700; color: var(--accent); text-decoration: none; }
     nav a { font-size: 0.85rem; color: var(--muted); text-decoration: none; margin-left: 1.2rem; }
+    nav a:hover { color: var(--accent); }
 
-    .page-wrap { max-width: 820px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 260px; gap: 2rem; align-items: start; }
-    @media (max-width: 680px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
+    /* LAYOUT */
+    .page-wrap { max-width: 900px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: 1fr 260px; gap: 2rem; align-items: start; }
+    @media (max-width: 700px) { .page-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
 
-    article { background: var(--white); border-radius: 12px; padding: 2rem; }
-    .article-meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; }
-    .article-meta span { margin-right: 1rem; }
-    article h1 { font-size: 1.45rem; font-weight: 700; line-height: 1.45; margin-bottom: 1rem; }
+    /* ARTICLE */
+    article { background: var(--white); border-radius: 14px; padding: 2rem 2.25rem; box-shadow: 0 2px 12px rgba(0,0,0,.05); }
+    @media (max-width: 480px) { article { padding: 1.25rem; } }
 
-    .toc { background: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 1rem 1.25rem; margin: 1.5rem 0; }
-    .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--accent); }
-    .toc ol { padding-left: 1.2rem; }
-    .toc li { font-size: 0.85rem; margin: 0.25rem 0; }
+    .article-meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.75rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+    .article-meta span { display: flex; align-items: center; gap: 0.3rem; }
+    article h1 { font-family: 'Shippori Mincho', serif; font-size: 1.55rem; font-weight: 600; line-height: 1.5; margin-bottom: 1rem; color: #111; }
+
+    /* HERO */
+    .hero-img { width: 100%; height: 220px; background: linear-gradient(135deg, var(--accent) 0%, #e57cb0 50%, var(--accent-mid) 100%); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.25rem; font-size: 4rem; }
+
+    /* 目次 */
+    .toc { background: var(--accent-light); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 1.1rem 1.4rem; margin: 1.5rem 0; }
+    .toc-title { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.6rem; color: var(--accent); }
+    .toc ol { padding-left: 1.3rem; }
+    .toc li { font-size: 0.85rem; margin: 0.3rem 0; }
     .toc a { color: var(--accent); text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
 
-    article h2 { font-size: 1.15rem; font-weight: 700; border-left: 4px solid var(--accent); padding-left: 0.75rem; margin: 2rem 0 0.75rem; }
-    article h3 { font-size: 1rem; font-weight: 700; margin: 1.25rem 0 0.4rem; color: var(--accent); }
-    article p { margin-bottom: 1rem; font-size: 0.95rem; }
+    /* 見出し */
+    article h2 { font-size: 1.2rem; font-weight: 700; background: linear-gradient(90deg, var(--accent-light) 0%, transparent 100%); border-left: 5px solid var(--accent); padding: 0.55rem 0.9rem; margin: 2.25rem 0 0.9rem; border-radius: 0 6px 6px 0; }
+    article h3 { font-size: 1.0rem; font-weight: 700; margin: 1.5rem 0 0.5rem; color: var(--accent-dark); padding-left: 0.7rem; border-left: 3px solid var(--accent-mid); }
+    article h4 { font-size: 0.95rem; font-weight: 700; margin: 1.1rem 0 0.35rem; color: #333; }
+    article p { margin-bottom: 1.1rem; font-size: 0.95rem; }
+    article ul, article ol { padding-left: 1.4rem; margin-bottom: 1rem; }
+    article li { font-size: 0.93rem; margin: 0.35rem 0; }
 
-    /* ランキングカード */
-    .rank-card { border: 1px solid var(--border); border-radius: 10px; padding: 1.25rem; margin: 1.25rem 0; }
-    .rank-header { display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.75rem; }
-    .rank-num { min-width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1rem; color: #fff; flex-shrink: 0; margin-top: 2px; }
-    .gold   { background: #c8930a; }
-    .silver { background: #7a7a7a; }
-    .bronze { background: #9e5c2a; }
-    .rank4  { background: #c0648a; }
-    .rank5  { background: #c0648a; }
-    .rank-name { font-weight: 700; font-size: 0.98rem; line-height: 1.5; }
-    .rank-price { font-size: 0.82rem; color: var(--muted); margin-top: 0.2rem; }
-    .rank-specs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 0.75rem; }
-    .spec-tag { background: var(--accent-light); color: var(--accent); font-size: 0.75rem; padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: 500; }
-    .rank-desc { font-size: 0.88rem; color: #333; margin-bottom: 0.75rem; line-height: 1.75; }
-    .btn-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
-    .aff-btn { flex: 1; min-width: 120px; display: block; text-align: center; padding: 0.65rem 1rem; border-radius: 7px; text-decoration: none; font-weight: 700; font-size: 0.85rem; transition: opacity 0.2s; }
-    .aff-btn:hover { opacity: 0.82; }
-    .btn-amazon  { background: #ff9900; color: #111; }
-    .btn-rakuten { background: #bf0000; color: #fff; }
-
-    /* 比較表 */
-    .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin: 1rem 0; display: block; overflow-x: auto; }
-    .comparison-table th { background: var(--accent); color: #fff; padding: 0.55rem 0.7rem; text-align: left; white-space: nowrap; }
-    .comparison-table td { padding: 0.55rem 0.7rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
-    .comparison-table tr:nth-child(even) td { background: var(--accent-light); }
-
-    /* ポイントボックス */
-    .point-box { background: var(--accent-light); border: 1px solid #e0b0c4; border-radius: 8px; padding: 1rem 1.2rem; margin: 1rem 0; }
+    /* 強調ボックス */
+    .point-box { background: var(--accent-light); border: 1px solid var(--accent-mid); border-radius: 10px; padding: 1rem 1.3rem; margin: 1.1rem 0; }
+    .point-box .box-title { font-weight: 700; font-size: 0.88rem; color: var(--accent-dark); margin-bottom: 0.5rem; }
     .point-box ul { padding-left: 1.2rem; }
     .point-box li { font-size: 0.9rem; margin: 0.3rem 0; }
 
-    /* ========================================
-       ★ AdSense広告枠
-       <div class="ad-unit">〜</div> を
-       まるごとAdSenseのコードに差し替えてください
-    ======================================== */
-    .ad-unit { background: #f5f0f2; border: 1px dashed #cbb8c0; border-radius: 8px; padding: 1rem; text-align: center; color: #aaa; font-size: 0.75rem; margin: 1.5rem 0; min-height: 90px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
+    .warn-box { background: var(--warn-bg); border-left: 4px solid var(--warn-border); border-radius: 0 10px 10px 0; padding: 1rem 1.3rem; margin: 1.1rem 0; font-size: 0.91rem; }
+    .warn-box .box-title { font-weight: 700; color: #b07c00; margin-bottom: 0.4rem; }
 
-    /* サイドバー */
+    .info-box { background: #f2eeff; border-left: 4px solid #6f4bd9; border-radius: 0 10px 10px 0; padding: 1rem 1.3rem; margin: 1.1rem 0; font-size: 0.91rem; }
+    .info-box .box-title { font-weight: 700; color: #4a2bb7; margin-bottom: 0.4rem; }
+
+    /* ランキングカード */
+    .rank-card { border: 1px solid var(--border); border-radius: 12px; padding: 1.4rem; margin: 1.5rem 0; transition: box-shadow 0.2s; }
+    .rank-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.09); }
+    .rank-card.top1 { border-color: #c0648a; border-width: 2px; }
+
+    .rank-header { display: flex; gap: 0.85rem; align-items: center; margin-bottom: 0.9rem; }
+    .rank-num { min-width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.05rem; color: #fff; flex-shrink: 0; }
+    .gold { background: linear-gradient(135deg,#e6a817,#c8930a); }
+    .silver { background: linear-gradient(135deg,#999,#666); }
+    .bronze { background: linear-gradient(135deg,#bf7a3a,#9e5c2a); }
+    .rank4, .rank5 { background: linear-gradient(135deg,#d36aa2,#b14c7a); }
+
+    .rank-name { font-weight: 700; font-size: 1.1rem; line-height: 1.35; }
+    .rank-price { font-size: 0.82rem; color: var(--muted); margin-top: 0.1rem; }
+
+    .rank-badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.72rem; font-weight: 700; padding: 0.15rem 0.55rem; border-radius: 4px; margin-left: 0.5rem; vertical-align: middle; }
+
+    .rank-specs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.5rem 0 0.9rem; }
+    .spec-tag { background: var(--accent-light); color: var(--accent-dark); font-size: 0.75rem; padding: 0.22rem 0.65rem; border-radius: 999px; font-weight: 500; border: 1px solid var(--accent-mid); }
+
+    /* スコアバー */
+    .score-bars { margin: 0.75rem 0 1rem; display: flex; flex-direction: column; gap: 0.45rem; }
+    .score-row { display: flex; align-items: center; gap: 0.6rem; }
+    .score-label { font-size: 0.78rem; color: var(--muted); width: 110px; flex-shrink: 0; }
+    .score-bar-bg { flex: 1; height: 8px; background: #e8e8e8; border-radius: 999px; overflow: hidden; }
+    .score-bar-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--accent), #eaa0c2); }
+    .score-val { font-size: 0.78rem; font-weight: 700; color: var(--accent); width: 34px; text-align: right; }
+
+    /* 長所・短所 */
+    .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 0.9rem 0 1rem; }
+    @media (max-width: 480px) { .pros-cons { grid-template-columns: 1fr; } }
+    .pros, .cons { border-radius: 8px; padding: 0.8rem 1rem; }
+    .pros { background: #f8eff4; border: 1px solid #e6c6d8; }
+    .cons { background: #fff5f5; border: 1px solid #fbb; }
+    .pros-title { font-size: 0.8rem; font-weight: 700; color: var(--accent-dark); margin-bottom: 0.4rem; }
+    .cons-title { font-size: 0.8rem; font-weight: 700; color: #c0392b; margin-bottom: 0.4rem; }
+    .pros ul, .cons ul { padding-left: 1.1rem; }
+    .pros li, .cons li { font-size: 0.83rem; margin: 0.25rem 0; }
+
+    .rank-desc { font-size: 0.9rem; color: #333; margin-bottom: 0.9rem; line-height: 1.8; }
+    .rank-desc strong { color: var(--accent-dark); }
+
+    /* こんな人におすすめ */
+    .for-who { background: #f4f8ff; border: 1px solid #c5d8f0; border-radius: 8px; padding: 0.75rem 1rem; margin: 0.75rem 0; font-size: 0.87rem; }
+    .for-who strong { color: #1e5fa8; }
+
+    .btn-row { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 1rem; }
+    .aff-btn { flex: 1; min-width: 120px; display: block; text-align: center; padding: 0.7rem 1rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 0.85rem; transition: all 0.2s; }
+    .aff-btn:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,.15); }
+    .btn-amazon { background: #ff9900; color: #111; }
+    .btn-rakuten { background: #bf0000; color: #fff; }
+
+    /* 比較表 */
+    .table-wrap { overflow-x: auto; margin: 1rem 0; border-radius: 10px; border: 1px solid var(--border); }
+    .comparison-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; min-width: 560px; }
+    .comparison-table th { background: var(--accent); color: #fff; padding: 0.65rem 0.8rem; text-align: left; white-space: nowrap; }
+    .comparison-table td { padding: 0.65rem 0.8rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table tr:nth-child(even) td { background: var(--accent-light); }
+    .td-best { color: var(--accent-dark); font-weight: 700; }
+
+    /* FAQ */
+    .faq-item { border: 1px solid var(--border); border-radius: 10px; margin: 0.85rem 0; overflow: hidden; }
+    .faq-q { background: var(--accent-light); padding: 0.9rem 1.1rem; font-weight: 700; font-size: 0.93rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+    .faq-q::after { content: '＋'; font-size: 1.1rem; color: var(--accent); transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { content: '－'; }
+    .faq-a { padding: 0.9rem 1.1rem; font-size: 0.9rem; display: none; border-top: 1px solid var(--border); line-height: 1.8; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* SIDEBAR */
     .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
-    .sidebar-card { background: var(--white); border-radius: 10px; padding: 1.25rem; }
-    .sidebar-card h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); }
+    .sidebar-card { background: var(--white); border-radius: 12px; padding: 1.25rem; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+    .sidebar-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--accent); color: var(--accent-dark); }
     .sidebar-card ul { list-style: none; }
-    .sidebar-card li { font-size: 0.85rem; padding: 0.35rem 0; border-bottom: 1px solid var(--border); }
+    .sidebar-card li { font-size: 0.84rem; padding: 0.38rem 0; border-bottom: 1px solid var(--border); }
     .sidebar-card li:last-child { border-bottom: none; }
     .sidebar-card a { color: var(--text); text-decoration: none; }
-    .sidebar-ad { background: #f5f0f2; border: 1px dashed #cbb8c0; border-radius: 8px; padding: 1rem; text-align: center; font-size: 0.75rem; color: #aaa; min-height: 250px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 4px; }
+    .sidebar-card a:hover { color: var(--accent); }
 
     footer { text-align: center; padding: 2rem 1rem; font-size: 0.8rem; color: var(--muted); margin-top: 1rem; }
     footer a { color: var(--muted); }
+
+    .ad-unit { margin: 1.75rem 0; }
   </style>
 </head>
-<body>
 
+<body>
 <header>
   <div class="header-inner">
     <a class="site-name" href="index.html">✨ 美肌ラボ</a>
@@ -114,273 +178,506 @@
 </header>
 
 <div class="page-wrap">
-<main>
-<article>
-
-  <div class="article-meta">
-    <span>📅 2026年4月29日</span>
-    <span>✏️ 編集部</span>
-  </div>
-
-  <h1>【2026年最新】美白美容液おすすめランキング5選｜シミ・くすみ・毛穴・エイジングケアを徹底比較</h1>
-
-  <!-- ★ 広告① 記事上
-       下の<div class="ad-unit">〜</div>をまるごとAdSenseコードに差し替える -->
-  <!-- beautySerum -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-3194469533822630"
-        data-ad-slot="8492206482"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-  <div class="toc">
-    <div class="toc-title">📋 目次</div>
-    <ol>
-      <li><a href="#how-to-choose">美容液の選び方｜3つのポイント</a></li>
-      <li><a href="#ranking">おすすめ美容液 ランキング TOP5</a></li>
-      <li><a href="#comparison">5製品まとめ比較表</a></li>
-      <li><a href="#summary">まとめ</a></li>
-    </ol>
-  </div>
-
-  <p>「シミやそばかすが気になり始めた」「毛穴の開きやくすみをなんとかしたい」「エイジングケアを本格的に始めたい」——そんな方に向けて、2026年現在のAmazon人気商品をもとに美白・美肌ケアに効果的な美容液5選をランキング形式で紹介します。</p>
-  <p>プチプラから韓国コスメまで、さまざまな価格帯・成分・悩み別に幅広く選んだので、自分に合った1本がきっと見つかります。</p>
-
-  <h2 id="how-to-choose">美容液の選び方｜3つのポイント</h2>
-
-  <h3>① 自分の悩みに合った成分で選ぶ</h3>
-  <p>美容液は配合成分によって効果が大きく異なります。<strong>シミ・そばかすが気になる方</strong>にはトラネキサム酸・ビタミンC誘導体、<strong>毛穴・くすみが気になる方</strong>にはナイアシンアミド、<strong>エイジングケア・ハリを求める方</strong>にはレチノール・レチナール・ペプチドが効果的です。まず自分の一番の悩みを明確にしてから選ぶのがポイントです。</p>
-
-  <h3>② 医薬部外品か化粧品かを確認する</h3>
-  <p>パッケージに<strong>「医薬部外品」</strong>と書かれている商品は、有効成分の効果が国に認められたもので、シミ予防などの効能を表示できます。化粧品よりも高い効果が期待できるため、しっかりケアしたい方は医薬部外品を選ぶのがおすすめです。</p>
-
-  <h3>③ 使いやすさ・肌への負担で選ぶ</h3>
-  <p>レチノールなどの高機能成分は効果が高い反面、使い始めは肌が慣れるまで赤みや乾燥が出ることがあります。初めて美容液を使う方や敏感肌の方は<strong>低刺激・肌なじみの良いタイプ</strong>から始めるのが安心です。</p>
-
-  <div class="point-box">
-    <ul>
-      <li>✅ シミ・そばかす → トラネキサム酸・ビタミンC誘導体配合を選ぼう</li>
-      <li>✅ 毛穴・くすみ → ナイアシンアミド配合がおすすめ</li>
-      <li>✅ エイジングケア → レチノール・ペプチド系を取り入れよう</li>
-    </ul>
-  </div>
-
-  <h2 id="ranking">おすすめ美容液 ランキング TOP5</h2>
-
-  <!-- 1位 -->
-  <div class="rank-card">
-    <div class="rank-header">
-      <div class="rank-num gold">1</div>
-      <div>
-        <div class="rank-name">肌美精 【医薬部外品】 ターニングケア美白 薬用 美白 美容液 30ml</div>
-        <div class="rank-price">成分：ビタミンC・トラネキサム酸 / シミ・そばかすケア</div>
+  <main>
+    <article>
+      <div class="article-meta">
+        <span>📅 2026年4月29日</span>
+        <span>✏️ 編集部</span>
       </div>
-    </div>
-    <div class="rank-specs">
-      <span class="spec-tag">医薬部外品</span>
-      <span class="spec-tag">ビタミンC</span>
-      <span class="spec-tag">トラネキサム酸</span>
-      <span class="spec-tag">シミ・そばかす</span>
-      <span class="spec-tag">30ml</span>
-      <span class="spec-tag">国産ブランド</span>
-    </div>
-    <p class="rank-desc">クラシエが手がける肌美精ブランドの美白美容液です。シミ・そばかすに有効な成分として知られるトラネキサム酸とビタミンC誘導体をダブル配合。医薬部外品として国に効能が認められており、毎日使い続けることで透明感のある明るい肌へと導いてくれます。30mlとたっぷり使えるサイズ感でコスパが高く、国産ブランドならではの安心感も魅力。「まず試してみたい」という美白ケア初心者の方から、毎日のスキンケアに取り入れているリピーターまで幅広く支持されている定番の1本です。</p>
-    <div class="btn-row">
-      <a href="https://amzn.to/4eaOnDc" class="aff-btn btn-amazon">Amazonで見る</a>
-      <a href="https://item.rakuten.co.jp/sundrug/4901417622440/" class="aff-btn btn-rakuten">楽天で見る</a>
-    </div>
-  </div>
 
-  <!-- 2位 -->
-  <div class="rank-card">
-    <div class="rank-header">
-      <div class="rank-num silver">2</div>
-      <div>
-        <div class="rank-name">メラノCC 【医薬部外品】 薬用しみ集中対策プレミアム美容液 20ml</div>
-        <div class="rank-price">成分：ビタミンC誘導体 / 集中シミケア</div>
+      <h1>【2026年最新】美白美容液おすすめランキング5選｜シミ・くすみ・毛穴・エイジングケアを徹底比較</h1>
+
+      <div class="hero-img">✨</div>
+
+      <!-- 記事上 広告 -->
+      <div class="ad-unit">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3194469533822630"
+             data-ad-slot="8492206482"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
       </div>
-    </div>
-    <div class="rank-specs">
-      <span class="spec-tag">医薬部外品</span>
-      <span class="spec-tag">ビタミンC誘導体</span>
-      <span class="spec-tag">しみ集中対策</span>
-      <span class="spec-tag">プレミアム処方</span>
-      <span class="spec-tag">ロート製薬</span>
-    </div>
-    <p class="rank-desc">ロート製薬が展開するメラノCCブランドのプレミアムライン美容液です。シミに直接アプローチする高浸透ビタミンC誘導体を集中配合した処方で、気になるシミへの効果的なケアが期待できます。医薬部外品として認可された「しみ集中対策」の効能表示が信頼の証。プレミアムの名の通り通常ラインよりも高機能な処方で、本格的にシミケアに取り組みたい方に特におすすめの1本です。コンパクトな20mlサイズで持ち運びにも便利です。</p>
-    <div class="btn-row">
-      <a href="https://amzn.to/4vYxUbE" class="aff-btn btn-amazon">Amazonで見る</a>
-      <a href="https://item.rakuten.co.jp/kzstore/4987241168583/" class="aff-btn btn-rakuten">楽天で見る</a>
-    </div>
-  </div>
 
-  <!-- ★ 広告② 記事中
-       下の<div class="ad-unit">〜</div>をまるごとAdSenseコードに差し替える -->
-    <!-- beautySerum -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-3194469533822630"
-        data-ad-slot="8492206482"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+      <p>「シミやそばかすが気になり始めた」「くすみ・毛穴をケアしたい」「エイジングケアも本格的に始めたい」——そんな方に向けて、2026年のおすすめ<strong>美白・美肌美容液5選</strong>をランキング形式で紹介します。</p>
+      <p>シミ向け・毛穴向け・エイジング向けなど、悩み別に選べるようにまとめました。まずは「自分の悩み」から逆算して選んでください。</p>
 
-  <!-- 3位 -->
-  <div class="rank-card">
-    <div class="rank-header">
-      <div class="rank-num bronze">3</div>
-      <div>
-        <div class="rank-name">The Ordinary（オーディナリー） ナイアシンアミド10%+亜鉛1% フェイスセラム 30ml</div>
-        <div class="rank-price">成分：ナイアシンアミド10%・亜鉛1% / 毛穴・ブライトニング</div>
+      <div class="warn-box">
+        <div class="box-title">⚠️ この記事を読む前に</div>
+        美白美容液は<strong>“効く成分を使えば終わり”ではなく</strong>、相性と継続が重要です。特にレチノール系は刺激になりやすい場合があるので、まずは肌状態に合わせて慎重に導入しましょう。
       </div>
-    </div>
-    <div class="rank-specs">
-      <span class="spec-tag">ナイアシンアミド10%</span>
-      <span class="spec-tag">亜鉛1%</span>
-      <span class="spec-tag">毛穴ケア</span>
-      <span class="spec-tag">ブライトニング</span>
-      <span class="spec-tag">ベスコス受賞</span>
-      <span class="spec-tag">敏感肌OK</span>
-    </div>
-    <p class="rank-desc">世界中のスキンケアマニアから絶大な支持を集める、カナダ発のブランド「The Ordinary」の看板製品です。ナイアシンアミドを10%という高濃度で配合し、毛穴の目立ちを抑えながらくすみ・乾燥・ゴワつきをまとめてケアします。亜鉛との組み合わせが皮脂コントロールにも効果的で、テカリが気になる方にも向いています。ベスコス（ベストコスメ）を多数受賞した実力派で、敏感肌にも使いやすい低刺激処方。30mlのミニサイズでまずお試しするのがおすすめです。</p>
-    <div class="btn-row">
-      <a href="https://amzn.to/42705aG" class="aff-btn btn-amazon">Amazonで見る</a>
-      <a href="https://item.rakuten.co.jp/theordinary/or-2/" class="aff-btn btn-rakuten">楽天で見る</a>
-    </div>
-  </div>
 
-  <!-- 4位 -->
-  <div class="rank-card">
-    <div class="rank-header">
-      <div class="rank-num rank4">4</div>
-      <div>
-        <div class="rank-name">CELIMAX（セリマックス） ビタA レチナール ショット タイトニングブースター 15ml</div>
-        <div class="rank-price">成分：レチナール・ナイアシンアミド / エイジングケア・毛穴・シワ</div>
+      <div class="toc">
+        <div class="toc-title">📋 目次</div>
+        <ol>
+          <li><a href="#how-to-choose">美容液の選び方｜失敗しない3つのポイント</a></li>
+          <li><a href="#ranking">おすすめ美容液 ランキングTOP5（2026年版）</a></li>
+          <li><a href="#comparison">5製品まとめ比較表</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#summary">まとめ・自分に合う1本の決め方</a></li>
+        </ol>
       </div>
-    </div>
-    <div class="rank-specs">
-      <span class="spec-tag">レチナール配合</span>
-      <span class="spec-tag">ナイアシンアミド</span>
-      <span class="spec-tag">エイジングケア</span>
-      <span class="spec-tag">毛穴・小ジワ</span>
-      <span class="spec-tag">韓国コスメ</span>
-      <span class="spec-tag">導入美容液</span>
-    </div>
-    <p class="rank-desc">韓国コスメブランドCELIMAXの高機能エイジングケア美容液です。ビタミンAの中でもレチノールより高い変換効率を持つ「レチナール」を配合し、シワ・小ジワ・毛穴のたるみにアプローチします。さらにナイアシンアミドとの組み合わせでブライトニング効果も期待でき、エイジングサインが気になり始めた方に最適な1本。針美容液のような高浸透処方で、化粧水前の導入として使うことで後続のスキンケアの効果も高めてくれます。母の日ギフトとしても人気の商品です。</p>
-    <div class="btn-row">
-      <a href="https://amzn.to/4ePPKr2" class="aff-btn btn-amazon">Amazonで見る</a>
-      <a href="https://item.rakuten.co.jp/roseroseshop/celimax_2504002/" class="aff-btn btn-rakuten">楽天で見る</a>
-    </div>
-  </div>
 
-  <!-- 5位 -->
-  <div class="rank-card">
-    <div class="rank-header">
-      <div class="rank-num rank5">5</div>
-      <div>
-        <div class="rank-name">メディキューブ PDRNピンクアンプル 10,000ppm配合 美容液</div>
-        <div class="rank-price">成分：PDRN（サーモン由来）・ペプチド / ハリ・低刺激</div>
+      <!-- 選び方 -->
+      <h2 id="how-to-choose">美容液の選び方｜失敗しない3つのポイント</h2>
+
+      <h3>① 自分の悩みに合った成分で選ぶ</h3>
+      <p>美容液は配合成分で狙える悩みが変わります。<strong>シミ・そばかす</strong>ならトラネキサム酸やビタミンC誘導体、<strong>毛穴・くすみ</strong>ならナイアシンアミド、<strong>エイジング</strong>ならレチノール/レチナールやペプチドを優先すると選びやすいです。</p>
+
+      <h3>② 医薬部外品かどうかを確認する</h3>
+      <p>パッケージに<strong>「医薬部外品」</strong>とある商品は、一定の有効成分が認められており、シミ予防などの効能表示ができます。しっかり狙うなら医薬部外品が候補になります。</p>
+
+      <h3>③ 使い始めの“肌負担”を考える</h3>
+      <p>レチノール系や高機能成分は、慣れるまで赤み・乾燥が出ることがあります。敏感肌や初めての方は<strong>低刺激設計</strong>や“導入しやすいタイプ”からスタートするのが安心です。</p>
+
+      <div class="point-box">
+        <div class="box-title">✅ 選び方チェックリスト</div>
+        <ul>
+          <li>一番の悩み（シミ/毛穴/くすみ/エイジング）を決めた</li>
+          <li>医薬部外品か、または化粧品でどう攻めるか理解した</li>
+          <li>使い始めの刺激に備えて段階導入できる</li>
+        </ul>
       </div>
+
+      <!-- ランキング -->
+      <h2 id="ranking">おすすめ美容液 ランキング TOP5（2026年版）</h2>
+
+      <!-- 1位 -->
+      <div class="rank-card top1">
+        <div class="rank-header">
+          <div class="rank-num gold">1</div>
+          <div>
+            <div class="rank-name">肌美精 ターニングケア美白（医薬部外品）</div>
+            <div class="rank-price">肌悩み：シミ・そばかす / 成分：ビタミンC・トラネキサム酸</div>
+          </div>
+        </div>
+        <div class="rank-specs">
+          <span class="spec-tag">医薬部外品</span>
+          <span class="spec-tag">ビタミンC</span>
+          <span class="spec-tag">トラネキサム酸</span>
+          <span class="spec-tag">30ml</span>
+          <span class="spec-tag">美白ケア</span>
+        </div>
+
+        <div class="score-bars">
+          <div class="score-row"><span class="score-label">美白実感</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:93%"></div></div><span class="score-val">9.3</span></div>
+          <div class="score-row"><span class="score-label">使いやすさ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:88%"></div></div><span class="score-val">8.8</span></div>
+          <div class="score-row"><span class="score-label">コスパ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:84%"></div></div><span class="score-val">8.4</span></div>
+          <div class="score-row"><span class="score-label">継続性</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%"></div></div><span class="score-val">9.0</span></div>
+        </div>
+
+        <p class="rank-desc">
+          クラシエの肌美精ブランドによる、美白美容液の定番枠。シミ・そばかすに着目した<strong>トラネキサム酸とビタミンC系成分</strong>を組み合わせ、毎日使い続けることで明るい肌へ導く設計です。30mlサイズで使いやすく、初めての美白ケアにも取り入れやすいのが魅力。
+        </p>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-title">👍 良い点</div>
+            <ul>
+              <li>医薬部外品で狙いが明確</li>
+              <li>毎日使いやすい設計</li>
+              <li>初心者でも迷いにくい</li>
+              <li>高機能成分の王道構成</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-title">👎 気になる点</div>
+            <ul>
+              <li>敏感肌は“導入期”の様子見が必要</li>
+              <li>即効性より継続前提</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="for-who">💁 <strong>こんな人におすすめ：</strong>シミ・そばかすケアを初めて始める方／迷ったら無難に選びたい方</div>
+
+        <div class="btn-row">
+          <a href="https://amzn.to/4eaOnDc" class="aff-btn btn-amazon">Amazonで見る</a>
+          <a href="https://item.rakuten.co.jp/sundrug/4901417622440/" class="aff-btn btn-rakuten">楽天で見る</a>
+        </div>
+      </div>
+
+      <!-- 2位 -->
+      <div class="rank-card">
+        <div class="rank-header">
+          <div class="rank-num silver">2</div>
+          <div>
+            <div class="rank-name">メラノCC プレミアム（医薬部外品）</div>
+            <div class="rank-price">肌悩み：集中シミ / 成分：ビタミンC誘導体</div>
+          </div>
+        </div>
+
+        <div class="rank-specs">
+          <span class="spec-tag">医薬部外品</span>
+          <span class="spec-tag">ビタミンC誘導体</span>
+          <span class="spec-tag">集中シミ対策</span>
+          <span class="spec-tag">ロート製薬</span>
+          <span class="spec-tag">20ml</span>
+        </div>
+
+        <div class="score-bars">
+          <div class="score-row"><span class="score-label">シミ特化度</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:94%"></div></div><span class="score-val">9.4</span></div>
+          <div class="score-row"><span class="score-label">浸透/使用感</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:86%"></div></div><span class="score-val">8.6</span></div>
+          <div class="score-row"><span class="score-label">続けやすさ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:85%"></div></div><span class="score-val">8.5</span></div>
+          <div class="score-row"><span class="score-label">コスパ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div><span class="score-val">8.0</span></div>
+        </div>
+
+        <p class="rank-desc">
+          “シミへの集中アプローチ”を重視した美白美容液。ビタミンC誘導体を中心に、医薬部外品としての効能表示が魅力です。プレミアム処方として、より本気でシミケアに取り組みたい方の候補になります。
+        </p>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-title">👍 良い点</div>
+            <ul>
+              <li>シミに向けた設計が分かりやすい</li>
+              <li>本格ケア派に相性が良い</li>
+              <li>小容量で使い切りやすい</li>
+              <li>日々のルーティン化しやすい</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-title">👎 気になる点</div>
+            <ul>
+              <li>肌状態によっては乾燥対策が必要</li>
+              <li>継続期間の見極めが大事</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="for-who">💁 <strong>こんな人におすすめ：</strong>しみ“集中ケア”したい方／メラノCCの使用感が好きな方</div>
+
+        <div class="btn-row">
+          <a href="https://amzn.to/4vYxUbE" class="aff-btn btn-amazon">Amazonで見る</a>
+          <a href="https://item.rakuten.co.jp/kzstore/4987241168583/" class="aff-btn btn-rakuten">楽天で見る</a>
+        </div>
+      </div>
+
+      <!-- 3位 -->
+      <div class="rank-card">
+        <div class="rank-header">
+          <div class="rank-num bronze">3</div>
+          <div>
+            <div class="rank-name">The Ordinary ナイアシンアミド10%+亜鉛1%</div>
+            <div class="rank-price">肌悩み：毛穴・くすみ / 成分：ナイアシンアミド</div>
+          </div>
+        </div>
+
+        <div class="rank-specs">
+          <span class="spec-tag">ナイアシンアミド10%</span>
+          <span class="spec-tag">亜鉛1%</span>
+          <span class="spec-tag">毛穴ケア</span>
+          <span class="spec-tag">ブライトニング</span>
+          <span class="spec-tag">敏感肌OK設計（目安）</span>
+        </div>
+
+        <div class="score-bars">
+          <div class="score-row"><span class="score-label">毛穴/皮脂</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:92%"></div></div><span class="score-val">9.2</span></div>
+          <div class="score-row"><span class="score-label">くすみ対策</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:85%"></div></div><span class="score-val">8.5</span></div>
+          <div class="score-row"><span class="score-label">使用感</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:80%"></div></div><span class="score-val">8.0</span></div>
+          <div class="score-row"><span class="score-label">コスパ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%"></div></div><span class="score-val">9.0</span></div>
+        </div>
+
+        <p class="rank-desc">
+          毛穴の目立ちや、テカリ・くすみにアプローチしたい方の“相棒”枠。ナイアシンアミド高濃度で、肌の状態を整えながらブライトニングを狙う設計です。まずは30mlで試して、相性を確かめやすいのも良いところ。
+        </p>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-title">👍 良い点</div>
+            <ul>
+              <li>毛穴悩みに直結しやすい</li>
+              <li>くすみケアにも寄せやすい</li>
+              <li>コスパが良い</li>
+              <li>肌を整える方向で使える</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-title">👎 気になる点</div>
+            <ul>
+              <li>高濃度のため初期は様子見推奨</li>
+              <li>シミ“単体”を強く狙う用途ではない</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="for-who">💁 <strong>こんな人におすすめ：</strong>毛穴・テカリ・くすみが同時に気になる方／成分で攻めたい方</div>
+
+        <div class="btn-row">
+          <a href="https://amzn.to/42705aG" class="aff-btn btn-amazon">Amazonで見る</a>
+          <a href="https://item.rakuten.co.jp/theordinary/or-2/" class="aff-btn btn-rakuten">楽天で見る</a>
+        </div>
+      </div>
+
+      <!-- 4位 -->
+      <div class="rank-card">
+        <div class="rank-header">
+          <div class="rank-num rank4">4</div>
+          <div>
+            <div class="rank-name">CELIMAX レチナール ショット タイトニングブースター</div>
+            <div class="rank-price">肌悩み：エイジング / 成分：レチナール・ナイアシンアミド</div>
+          </div>
+        </div>
+
+        <div class="rank-specs">
+          <span class="spec-tag">レチナール配合</span>
+          <span class="spec-tag">ナイアシンアミド</span>
+          <span class="spec-tag">エイジングケア</span>
+          <span class="spec-tag">毛穴・小ジワ</span>
+          <span class="spec-tag">導入美容液</span>
+        </div>
+
+        <div class="score-bars">
+          <div class="score-row"><span class="score-label">エイジング</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:92%"></div></div><span class="score-val">9.2</span></div>
+          <div class="score-row"><span class="score-label">毛穴/ハリ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:88%"></div></div><span class="score-val">8.8</span></div>
+          <div class="score-row"><span class="score-label">導入の相性</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:82%"></div></div><span class="score-val">8.2</span></div>
+          <div class="score-row"><span class="score-label">コスパ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:70%"></div></div><span class="score-val">7.0</span></div>
+        </div>
+
+        <p class="rank-desc">
+          レチノール系よりも効率面に期待できる“レチナール”を軸にしたエイジング美容液。さらにナイアシンアミドを組み合わせ、毛穴や小ジワのようなエイジングサインに寄せて設計されています。化粧水前の導入として使うと、後続ケアの土台づくりにも役立ちます。
+        </p>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-title">👍 良い点</div>
+            <ul>
+              <li>エイジングケアに寄せやすい</li>
+              <li>毛穴・小ジワの方向性が合う</li>
+              <li>導入美容液として使いやすい</li>
+              <li>韓国コスメ好きに刺さる</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-title">👎 気になる点</div>
+            <ul>
+              <li>“レチノイド系”なので肌状態の確認が必要</li>
+              <li>初心者は慎重に導入したい</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="for-who">💁 <strong>こんな人におすすめ：</strong>エイジング対策を強めたい方／導入美容液を活用したい方</div>
+
+        <div class="btn-row">
+          <a href="https://amzn.to/4ePPKr2" class="aff-btn btn-amazon">Amazonで見る</a>
+          <a href="https://item.rakuten.co.jp/roseroseshop/celimax_2504002/" class="aff-btn btn-rakuten">楽天で見る</a>
+        </div>
+      </div>
+
+      <!-- 5位 -->
+      <div class="rank-card">
+        <div class="rank-header">
+          <div class="rank-num rank5">5</div>
+          <div>
+            <div class="rank-name">メディキューブ PDRNピンクアンプル</div>
+            <div class="rank-price">肌悩み：ハリ・乾燥によるくすみ / 成分：PDRN・ペプチド</div>
+          </div>
+        </div>
+
+        <div class="rank-specs">
+          <span class="spec-tag">PDRN10,000ppm</span>
+          <span class="spec-tag">サーモン由来系</span>
+          <span class="spec-tag">ハリ・弾力</span>
+          <span class="spec-tag">低刺激設計（目安）</span>
+          <span class="spec-tag">ペプチド配合</span>
+        </div>
+
+        <div class="score-bars">
+          <div class="score-row"><span class="score-label">保湿/ハリ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:90%"></div></div><span class="score-val">9.0</span></div>
+          <div class="score-row"><span class="score-label">敏感肌配慮</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:82%"></div></div><span class="score-val">8.2</span></div>
+          <div class="score-row"><span class="score-label">使用感</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:84%"></div></div><span class="score-val">8.4</span></div>
+          <div class="score-row"><span class="score-label">コスパ</span><div class="score-bar-bg"><div class="score-bar-fill" style="width:78%"></div></div><span class="score-val">7.8</span></div>
+        </div>
+
+        <p class="rank-desc">
+          “サーモン注射”として話題のPDRNを配合した、ハリ・弾力ケア寄りの美容液。乾燥によるくすみにもアプローチを想定しつつ、10,000ppmという高配合を目安にした設計です。韓国コスメらしい使いやすさで、肌のコンディションを整えたい方に向きます。
+        </p>
+
+        <div class="pros-cons">
+          <div class="pros">
+            <div class="pros-title">👍 良い点</div>
+            <ul>
+              <li>ハリ・弾力ケアに寄せやすい</li>
+              <li>乾燥由来のくすみにアプローチ</li>
+              <li>低刺激寄りの設計（目安）</li>
+              <li>韓国コスメ好きに人気</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <div class="cons-title">👎 気になる点</div>
+            <ul>
+              <li>シミ“狙い撃ち”目的には別選択肢も</li>
+              <li>人によって合う/合わないは出うる</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="for-who">💁 <strong>こんな人におすすめ：</strong>乾燥ケアとハリを同時に狙いたい方／韓国コスメ系で探している方</div>
+
+        <div class="btn-row">
+          <a href="https://amzn.to/3OLWMCQ" class="aff-btn btn-amazon">Amazonで見る</a>
+          <a href="https://item.rakuten.co.jp/apr-japan/pdrnpinkserum/" class="aff-btn btn-rakuten">楽天で見る</a>
+        </div>
+      </div>
+
+      <!-- 記事中広告 -->
+      <div class="ad-unit">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3194469533822630"
+             data-ad-slot="8492206482"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+      <!-- 比較表 -->
+      <h2 id="comparison">5製品まとめ比較表</h2>
+      <p>特徴を一目で比較できます。横スクロールで確認してください。</p>
+
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>商品名</th>
+              <th>種別</th>
+              <th>主な成分</th>
+              <th>狙いやすい悩み</th>
+              <th>おすすめ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>肌美精 ターニングケア美白</strong></td>
+              <td>医薬部外品</td>
+              <td>ビタミンC・トラネキサム酸</td>
+              <td>シミ・そばかす</td>
+              <td class="td-best">美白ケア初心者</td>
+            </tr>
+            <tr>
+              <td><strong>メラノCC プレミアム美容液</strong></td>
+              <td>医薬部外品</td>
+              <td>ビタミンC誘導体</td>
+              <td>集中シミ対策</td>
+              <td class="td-best">本格シミケア</td>
+            </tr>
+            <tr>
+              <td><strong>The Ordinary（ナイアシンアミド）</strong></td>
+              <td>化粧品</td>
+              <td>ナイアシンアミド10%＋亜鉛1%</td>
+              <td>毛穴・くすみ・テカリ</td>
+              <td class="td-best">毛穴/皮脂が気になる人</td>
+            </tr>
+            <tr>
+              <td><strong>CELIMAX レチナールブースター</strong></td>
+              <td>化粧品</td>
+              <td>レチナール・ナイアシンアミド</td>
+              <td>エイジング・毛穴・小ジワ</td>
+              <td class="td-best">導入で攻めたい人</td>
+            </tr>
+            <tr>
+              <td><strong>メディキューブ PDRNピンクアンプル</strong></td>
+              <td>化粧品</td>
+              <td>PDRN・ペプチド</td>
+              <td>ハリ・乾燥・くすみ</td>
+              <td class="td-best">ハリ・弾力を底上げ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- FAQ -->
+      <h2 id="faq">よくある質問</h2>
+
+      <div class="faq-item">
+        <div class="faq-q">美白美容液はいつから効果を感じますか？</div>
+        <div class="faq-a">
+          <p>多くの場合、肌のターンオーバー（目安は数週間〜数か月）を考えて、まずは<strong>継続で様子を見る</strong>のがおすすめです。刺激が出た場合は使用頻度を落として調整しましょう。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">医薬部外品と化粧品、どっちを選べばいい？</div>
+        <div class="faq-a">
+          <p>シミ予防などを効能として狙いたいなら<strong>医薬部外品</strong>が候補です。一方、毛穴・くすみ・エイジングなど複合的にケアしたい場合は、化粧品の高機能成分も選択肢になります。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">レチノール/レチナール系は敏感肌でも使えますか？</div>
+        <div class="faq-a">
+          <p>肌状態によります。心配な場合は<strong>少量・低頻度からの導入</strong>や、保湿を厚めにするなど“慣らし”を意識してください。違和感が続く場合は使用を中止し、必要なら皮膚科へ相談しましょう。</p>
+        </div>
+      </div>
+
+      <!-- まとめ -->
+      <h2 id="summary">まとめ・自分に合う1本の決め方</h2>
+
+      <p>今回は、2026年おすすめの美白美容液5選を紹介しました。悩み別の選び方を最後に整理します。</p>
+
+      <div class="point-box">
+        <div class="box-title">🏆 悩み別おすすめ</div>
+        <ul>
+          <li>💄 <strong>シミ・そばかすをしっかりケア</strong> → 肌美精 ターニングケア美白</li>
+          <li>💄 <strong>しみに集中してアプローチ</strong> → メラノCC プレミアム美容液</li>
+          <li>💄 <strong>毛穴・くすみ・テカリ</strong> → The Ordinary ナイアシンアミド</li>
+          <li>💄 <strong>エイジング・毛穴・小ジワ</strong> → CELIMAX レチナールブースター</li>
+          <li>💄 <strong>ハリ・弾力・乾燥由来の悩み</strong> → メディキューブ PDRNピンクアンプル</li>
+        </ul>
+      </div>
+
+      <p>美白ケアは<strong>相性＋継続＋日焼け対策</strong>の3点セットで効率が上がります。気になった商品はリンク先で最新価格やレビューも確認してみてください。</p>
+
+      <!-- 記事下広告 -->
+      <div class="ad-unit">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3194469533822630"
+             data-ad-slot="8492206482"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+      </div>
+
+    </article>
+  </main>
+
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <h4>人気記事</h4>
+      <ul>
+        <li><a href="#">化粧水おすすめランキング5選</a></li>
+        <li><a href="#">日焼け止め徹底比較2026</a></li>
+        <li><a href="#">洗顔フォームおすすめ5選</a></li>
+        <li><a href="#">韓国コスメ人気ランキング</a></li>
+      </ul>
     </div>
-    <div class="rank-specs">
-      <span class="spec-tag">PDRN10,000ppm</span>
-      <span class="spec-tag">サーモン注射成分</span>
-      <span class="spec-tag">ハリ・弾力</span>
-      <span class="spec-tag">低刺激</span>
-      <span class="spec-tag">韓国コスメ</span>
-      <span class="spec-tag">ペプチド配合</span>
+
+    <div class="sidebar-card">
+      <h4>カテゴリー</h4>
+      <ul>
+        <li><a href="#">美容液</a></li>
+        <li><a href="#">化粧水・乳液</a></li>
+        <li><a href="#">日焼け止め</a></li>
+        <li><a href="#">韓国コスメ</a></li>
+      </ul>
     </div>
-    <p class="rank-desc">韓国の人気スキンケアブランド「メディキューブ」が手がける、話題のPDRN（ポリデオキシリボヌクレオチド）配合美容液です。PDRNはいわゆる「サーモン注射」と呼ばれる成分で、肌のハリ・弾力をサポートし乾燥によるくすみにアプローチします。10,000ppmという高濃度配合でありながら低刺激処方を実現しており、敏感肌の方でも使いやすい設計になっています。クリニックで話題の成分をセルフケアで手軽に取り入れたい方に注目の1本です。</p>
-    <div class="btn-row">
-      <a href="https://amzn.to/3OLWMCQ" class="aff-btn btn-amazon">Amazonで見る</a>
-      <a href="https://item.rakuten.co.jp/apr-japan/pdrnpinkserum/" class="aff-btn btn-rakuten">楽天で見る</a>
+
+    <!-- サイドバー広告（必要なら有効化） -->
+    <!--
+    <div class="sidebar-ad">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3194469533822630"
+           data-ad-slot="8492206482"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
-  </div>
-
-  <!-- 比較表 -->
-  <h2 id="comparison">5製品まとめ比較表</h2>
-  <table class="comparison-table">
-    <thead>
-      <tr><th>商品名</th><th>種別</th><th>主な成分</th><th>悩み</th><th>おすすめ</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>肌美精 ターニングケア美白</td><td>医薬部外品</td><td>ビタミンC・トラネキサム酸</td><td>シミ・そばかす</td><td>美白ケア初心者</td></tr>
-      <tr><td>メラノCC プレミアム美容液</td><td>医薬部外品</td><td>ビタミンC誘導体</td><td>しみ集中対策</td><td>本格シミケア</td></tr>
-      <tr><td>The Ordinary ナイアシンアミド</td><td>化粧品</td><td>ナイアシンアミド10%・亜鉛</td><td>毛穴・くすみ</td><td>毛穴・テカリ</td></tr>
-      <tr><td>CELIMAX レチナールブースター</td><td>化粧品</td><td>レチナール・ナイアシンアミド</td><td>シワ・毛穴・エイジング</td><td>エイジングケア</td></tr>
-      <tr><td>メディキューブ PDRNピンクアンプル</td><td>化粧品</td><td>PDRN・ペプチド</td><td>ハリ・弾力・乾燥</td><td>ハリ・韓国コスメ派</td></tr>
-    </tbody>
-  </table>
-
-  <!-- まとめ -->
-  <h2 id="summary">まとめ</h2>
-  <p>今回は2026年おすすめの美白・美肌美容液5選を紹介しました。悩み別にまとめると以下の通りです。</p>
-  <div class="point-box">
-    <ul>
-      <li>💄 <strong>シミ・そばかすをしっかりケアしたい</strong> → 肌美精 ターニングケア美白</li>
-      <li>💄 <strong>しみに集中してアプローチしたい</strong> → メラノCC プレミアム美容液</li>
-      <li>💄 <strong>毛穴・くすみ・テカリが気になる</strong> → The Ordinary ナイアシンアミド</li>
-      <li>💄 <strong>エイジングケア・シワ・毛穴をまとめてケア</strong> → CELIMAX レチナールブースター</li>
-      <li>💄 <strong>ハリ・弾力・韓国コスメを試したい</strong> → メディキューブ PDRNピンクアンプル</li>
-    </ul>
-  </div>
-  <p>自分の肌の悩みに合った1本を選んで、毎日のスキンケアに取り入れてみてください。気になった商品は各リンクから最新価格・在庫状況を確認してみてください！</p>
-
-  <!-- ★ 広告③ 記事下
-       下の<div class="ad-unit">〜</div>をまるごとAdSenseコードに差し替える -->
-    <!-- beautySerum -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-3194469533822630"
-        data-ad-slot="8492206482"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-</article>
-</main>
-
-<aside class="sidebar">
-  <!-- ★ サイドバー広告
-       下の<div class="sidebar-ad">〜</div>をまるごとAdSenseコードに差し替える -->
-  <!-- beautySerum -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-3194469533822630"
-        data-ad-slot="8492206482"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-  <div class="sidebar-card">
-    <h4>人気記事</h4>
-    <ul>
-      <li><a href="#">化粧水おすすめランキング5選</a></li>
-      <li><a href="#">日焼け止め徹底比較2026</a></li>
-      <li><a href="#">洗顔フォームおすすめ5選</a></li>
-      <li><a href="#">韓国コスメ人気ランキング</a></li>
-    </ul>
-  </div>
-  <div class="sidebar-card">
-    <h4>カテゴリー</h4>
-    <ul>
-      <li><a href="#">美容液</a></li>
-      <li><a href="#">化粧水・乳液</a></li>
-      <li><a href="#">日焼け止め</a></li>
-      <li><a href="#">韓国コスメ</a></li>
-    </ul>
-  </div>
-</aside>
+    -->
+  </aside>
 </div>
 
 <footer>
@@ -388,5 +685,13 @@
   <p style="margin-top:0.5rem;font-size:0.75rem;">※本サイトはアフィリエイト広告・Google AdSenseを利用しています。</p>
 </footer>
 
+<script>
+  // FAQ トグル
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.closest('.faq-item').classList.toggle('open');
+    });
+  });
+</script>
 </body>
 </html>
